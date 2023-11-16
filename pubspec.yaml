@@ -25,7 +25,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
+  fonts:
+    - family: MyFlutterApp
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
   # Enable generation of localized Strings from arb files.
   generate: true
 

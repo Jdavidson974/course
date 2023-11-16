@@ -1,5 +1,6 @@
 import 'package:course/src/favorites/favorites.dart';
 import 'package:course/src/home/home.dart';
+import 'package:course/src/presentation/my_flutter_app_icons.dart';
 import 'package:flutter/material.dart';
 
 class Layout extends StatefulWidget {
@@ -21,6 +22,9 @@ class _LayoutState extends State<Layout> {
       case 1:
         page = Favorites();
         break;
+      case 2:
+        page = Favorites();
+        break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
@@ -39,6 +43,10 @@ class _LayoutState extends State<Layout> {
                   NavigationRailDestination(
                     icon: Icon(Icons.favorite),
                     label: Text('Favorites'),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(MyFlutterApp.fast_food),
+                    label: Text('Ingrédients'),
                   ),
                 ],
                 selectedIndex: selectedIndex,
