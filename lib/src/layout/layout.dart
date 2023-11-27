@@ -1,5 +1,6 @@
 import 'package:course/src/favorites/favorites.dart';
 import 'package:course/src/home/home.dart';
+import 'package:course/src/ingredients/ingredients.dart';
 import 'package:course/src/presentation/my_flutter_app_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class _LayoutState extends State<Layout> {
         page = Favorites();
         break;
       case 2:
-        page = Favorites();
+        page = Ingredients();
         break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
